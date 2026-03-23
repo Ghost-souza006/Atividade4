@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ffffff 0%, #4a90e2 100%);
+    color: #212529;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    overflow: hidden;
+    padding: 20px 30px;
+}
+
+h1 {
+    background-color: #00e0fd;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+.exercicio {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dee2e6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exercicio:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.exercicio:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.exercicio h3 {
+    margin-top: 0;
+    color: #0056b3;
+    border-bottom: 2px solid #00aeff;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.resultado {
+    background-color: #e9f5ff;
+    border: 1px solid #b3d7ff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.resultado strong {
+    color: #004a99;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: Consolas, "Courier New", monospace;
+}
+
+ul, ol {
+    padding-left: 24px;
+    margin-top: 10px;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+/* container para botões */
+.btn-container,
+button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* opcional: estilo leve para o contêiner */
+.btn-container {
+    padding: 10px;
+    background: #f0f8ff;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .exercicio h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ----------------------------------------- */
+/* estilos adicionais para a página index   */
+/* ----------------------------------------- */
+
+/* centraliza título principal, já tratado acima */
+
+/* transformar lista em menu legível */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+ul > h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin: 1.5rem 0 0.5rem;
+}
+
+ul > li {
+    margin: 0.5rem 0;
+}
+
+ul > li a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul > li a:hover {
+    background: #e9f5ff;
+    color: #0056b3;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,37 @@
+/* ----------------------------------------- */
+/* estilos adicionais para a página index   */
+/* ----------------------------------------- */
+
+/* centraliza título principal, já tratado acima */
+
+/* transformar lista em menu legível */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+ul > h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin: 1.5rem 0 0.5rem;
+}
+
+ul > li {
+    margin: 0.5rem 0;
+}
+
+ul > li a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background 0.2s, color 0.2s;
+}
+
+ul > li a:hover {
+    background: #e9f5ff;
+    color: #0056b3;
+    border-radius: 4px;
+}
+
